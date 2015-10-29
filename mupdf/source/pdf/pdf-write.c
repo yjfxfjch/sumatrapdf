@@ -2072,7 +2072,7 @@ writeobjects(pdf_document *doc, pdf_write_options *opts, int pass)
 	if (!opts->do_incremental)
 	{
 		fprintf(opts->out, "%%PDF-%d.%d\n", doc->version / 10, doc->version % 10);
-		fprintf(opts->out, "%%\316\274\341\277\246\n\n");
+		//fprintf(opts->out, "%%\316\274\341\277\246\n\n");
 	}
 
 	dowriteobject(doc, opts, opts->start, pass);
